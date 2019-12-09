@@ -178,7 +178,7 @@ open class BarChartView: BarLineChartViewBase, BarChartDataProvider
     
     open var barData: BarChartData? { return _data as? BarChartData }
     open var barChartData: LineChartData?
-    open func setData() {
+    @objc open func setData() {
         self.data = self.barChartData
     }
     /// `true` if drawing values above bars is enabled, `false` ifnot
