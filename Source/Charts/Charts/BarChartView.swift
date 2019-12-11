@@ -177,7 +177,7 @@ open class BarChartView: BarLineChartViewBase, BarChartDataProvider
     // MARK: - BarChartDataProvider
     
     open var barData: BarChartData? { return _data as? BarChartData }
-    open var barChartData: BarChartData?
+    @objc open var barChartData: BarChartData?
     
     @objc open func setData() {
         self.data = barChartData
